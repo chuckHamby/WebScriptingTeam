@@ -7,9 +7,9 @@
  */
 
 class ProductsDAO{
-    public function get($username){
+    public function get($adminID){
         $sql = "SELECT * FROM products WHERE adminID = ?";
-        $record = Db::queryAll($sql,array());
+        $record = Db::queryAll($sql,array($adminID));
 
         if(empty($record)){
             return null;
