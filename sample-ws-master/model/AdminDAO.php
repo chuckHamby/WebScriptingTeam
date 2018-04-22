@@ -7,7 +7,7 @@
  */
 
 class AdminDAO{
-    public function get($username, $password){
+    public function get($username,$password){
         $sql = "SELECT * FROM admin WHERE adminID = ? AND password = ?";
         $record = Db::queryOne($sql,array($username, $password));
 
@@ -20,7 +20,24 @@ class AdminDAO{
     private function create($record){
         $username = $record["adminID"];
         $password = $record["password"];
+        $name = $record["name"];
+        $activeIndicator = $record["activeIndicator"];
+        $createdDate = $record["createdDate"];
+        $lastUpdated = $record["lastUpdated"];
+        $email = $record["email"];
 
-        return new Admin($username, $password);
+        return new Admin($username,$password,$name,$activeIndicator,$createdDate,$lastUpdated,$email);
     }
+
+//    public function insert($username,$password,$name,$activeIndicator,$createDate,$lastUpdated,$email)
+//    {
+//        $sql = "INSERT INTO admin VALUES (?,?,?,?,?,?,?)";
+//        $result = Db::query($sql,array($username,$password,$name,$activeIndicator,$createDate,$lastUpdated,$email));
+//
+//        if (empty($result))
+//        {
+//            return null;
+//        }
+//        return $this->create($result);
+//    }
 }

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="dea127b0-4381-4c4d-ab90-805b71ac9acf" name="localhost" url="http://localhost">
+      <webServer id="45fd302b-07c1-4078-a5f8-85c1fbf5f61f" name="AMPPS" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\Program Files (x86)\Ampps\www" accessType="MOUNT" />
+      </webServer>
+      <webServer id="d43480e2-9611-4864-a558-eb7dde470006" name="Ampps" url="http://localhost">
         <fileTransfer port="0" mountedRoot="C:\Program Files (x86)\Ampps\www" accessType="MOUNT" />
       </webServer>
     </option>

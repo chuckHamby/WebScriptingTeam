@@ -10,10 +10,20 @@ class Admin implements JsonSerializable{
 
     private $username;
     private $password;
+    private $name;
+    private $activeIndicator;
+    private $createdDate;
+    private $lastUpdated;
+    private $email;
 
-    public function __construct($uname, $pwd){
+    public function __construct($uname,$pwd,$name,$activeIndicator,$createdDate,$lastUpdated,$email){
         $this->password = $pwd;
         $this->username = $uname;
+        $this->name = $name;
+        $this->activeIndicator = $activeIndicator;
+        $this->createdDate = $createdDate;
+        $this->lastUpdated = $lastUpdated;
+        $this->email = $email;
     }
 
     /**
@@ -48,6 +58,85 @@ class Admin implements JsonSerializable{
         $this->password = $password;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getActiveIndicator()
+    {
+        return $this->activeIndicator;
+    }
+
+    /**
+     * @param mixed $activeIndicator
+     */
+    public function setActiveIndicator($activeIndicator)
+    {
+        $this->activeIndicator = $activeIndicator;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCreatedDate()
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param mixed $createdDate
+     */
+    public function setCreatedDate($createdDate)
+    {
+        $this->createdDate = $createdDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLastUpdated()
+    {
+        return $this->lastUpdated;
+    }
+
+    /**
+     * @param mixed $lastUpdated
+     */
+    public function setLastUpdated($lastUpdated)
+    {
+        $this->lastUpdated = $lastUpdated;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
 
 
 
@@ -60,6 +149,9 @@ class Admin implements JsonSerializable{
      */
     public function jsonSerialize()
     {
-        return["username"=>$this->username, "password"=>$this->password];
+        return["username"=>$this->username, "password"=>$this->password,
+            "name"=>$this->name, "activeIndicator"=>$this->activeIndicator,
+            "createdDate"=>$this->createdDate, "lastUpdated"=>$this->lastUpdated,
+            "email"=>$this->email];
     }
 }

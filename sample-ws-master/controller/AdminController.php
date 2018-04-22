@@ -11,11 +11,11 @@ class AdminController extends AbstractBaseController {
         $body = file_get_contents("php://input");
         $JSON = json_decode($body, true);
 
-        $username = $JSON["adminID"];
+        $username = $JSON["username"];
         $password = $JSON["password"];
 
         $DAO = new AdminDAO();
-        $user = $DAO->get($username, $password);
+        $user = $DAO->get($username,$password);
 
         if($user == null){
             $this->data["statusCode"] = 500;
