@@ -1,0 +1,7 @@
+New Product             WORKS - Needs validation ***
+EditAdminController     WORKS - Needs validation ***
+NewAdminController      WORKS - Needs validation ***
+EditProductController   WORKS - Needs validation ***
+NewProductController    WORKS - Needs validation *** see #1
+
+? AdminController       WORKS - Needs SQL Injection Protection / Validation.

@@ -1,0 +1,30 @@
+[13-Apr-2018 20:29:22 UTC] 1523651362 - No Controller Found: UsersController
+[13-Apr-2018 20:29:22 UTC] 1523651362 - No Controller Found: Favicon.icoController
+[13-Apr-2018 20:29:27 UTC] 1523651367 - No Controller Found: Favicon.icoController
+[13-Apr-2018 20:29:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1109 Unknown table 'admin' in information_schema in C:\Program Files (x86)\Ampps\www\model\Db.php:55
+Stack trace:
+#0 C:\Program Files (x86)\Ampps\www\model\Db.php(55): PDO->prepare('SELECT * FROM a...')
+#1 C:\Program Files (x86)\Ampps\www\model\AdminDAO.php(12): Db::queryOne('SELECT * FROM a...', Array)
+#2 C:\Program Files (x86)\Ampps\www\controller\AdminController.php(18): AdminDAO->get(NULL, NULL)
+#3 C:\Program Files (x86)\Ampps\www\controller\RouterController.php(78): AdminController->process(Array)
+#4 C:\Program Files (x86)\Ampps\www\index.php(103): RouterController->process(Array)
+#5 {main}
+  thrown in C:\Program Files (x86)\Ampps\www\model\Db.php on line 55
+[13-Apr-2018 20:29:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1109 Unknown table 'admin' in information_schema in C:\Program Files (x86)\Ampps\www\model\Db.php:55
+Stack trace:
+#0 C:\Program Files (x86)\Ampps\www\model\Db.php(55): PDO->prepare('SELECT * FROM a...')
+#1 C:\Program Files (x86)\Ampps\www\model\AdminDAO.php(12): Db::queryOne('SELECT * FROM a...', Array)
+#2 C:\Program Files (x86)\Ampps\www\controller\AdminController.php(18): AdminDAO->get(NULL, NULL)
+#3 C:\Program Files (x86)\Ampps\www\controller\RouterController.php(78): AdminController->process(Array)
+#4 C:\Program Files (x86)\Ampps\www\index.php(103): RouterController->process(Array)
+#5 {main}
+  thrown in C:\Program Files (x86)\Ampps\www\model\Db.php on line 55
+[13-Apr-2018 20:29:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1109 Unknown table 'admin' in information_schema in C:\Program Files (x86)\Ampps\www\model\Db.php:55
+Stack trace:
+#0 C:\Program Files (x86)\Ampps\www\model\Db.php(55): PDO->prepare('SELECT * FROM a...')
+#1 C:\Program Files (x86)\Ampps\www\model\AdminDAO.php(12): Db::queryOne('SELECT * FROM a...', Array)
+#2 C:\Program Files (x86)\Ampps\www\controller\AdminController.php(18): AdminDAO->get(NULL, NULL)
+#3 C:\Program Files (x86)\Ampps\www\controller\RouterController.php(78): AdminController->process(Array)
+#4 C:\Program Files (x86)\Ampps\www\index.php(103): RouterController->process(Array)
+#5 {main}
+  thrown in C:\Program Files (x86)\Ampps\www\model\Db.php on line 55

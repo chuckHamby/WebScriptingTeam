@@ -1,24 +1,32 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Chuck Hamby
- * Date: 4/13/2018
- * Time: 7:11 PM
+ * User: Administrator
+ * Date: 4/15/2018
+ * Time: 11:22 AM
  */
 
-class ProductsDAO{
-    public function get($adminID){
-        $sql = "SELECT * FROM products WHERE adminID = ?";
-        $record = Db::queryAll($sql,array($adminID));
+class DeleteProductDAO{
+    public function delete($adminID,$productID){
+        $sql = "DELETE FROM products WHERE adminID = ? AND ProductID = ?";
+        $record = Db::query($sql,array($adminID,$productID));
 
-        if(empty($record)){
+        if($record == 0){
             return null;
         }
-        return $this->create($record);
+
+        $sql = "SELECT * FROM products WHERE adminID = ? AND ProductID = ?";
+        $row = Db::queryOne($sql,array($adminID,$productID));
+
+        if (empty($row))
+        {
+            return null;
+        }
+        return $this->create($row);
     }
 
     private function create($record){
-        $productID = $record["productID"];
+        $productID = $record["ProductID"];
         $adminID = $record["adminID"];
         $name = $record["name"];
         $prodDesc = $record["prodDesc"];

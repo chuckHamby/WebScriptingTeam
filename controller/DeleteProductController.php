@@ -1,20 +1,20 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Chuck Hamby
- * Date: 4/13/2018
- * Time: 7:07 PM
+ * User: Administrator
+ * Date: 4/15/2018
+ * Time: 11:21 AM
  */
 
-class ProductsController extends AbstractBaseController {
+class DeleteProductController extends AbstractBaseController {
     function process($params){
         $body = file_get_contents("php://input");
         $JSON = json_decode($body, true);
 
         $adminID = $JSON["adminID"];
-
-        $DAO = new ProductsDAO();
-        $user = $DAO->get($adminID);
+        $productID = $JSON["productID"];
+        $DAO = new DeleteProductDAO();
+        $user = $DAO->delete($adminID,$productID);
 
         if($user == null){
             $this->data["statusCode"] = 500;
@@ -25,6 +25,8 @@ class ProductsController extends AbstractBaseController {
         $this->data["statusCode"] = 200;
         $this->data["statusMsg"] = "Successful";
 
+
         $this->data["user"] = $user;
+
     }
 }

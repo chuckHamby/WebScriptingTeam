@@ -1,0 +1,25 @@
+13-04-2018 08:29:22pm C:\Program Files (x86)\Ampps\www\index.php:52 - No cred file configured. Using default: C:/Program Files (x86)/Ampps/www/config/creds.ini
+13-04-2018 08:29:22pm C:\Program Files (x86)\Ampps\www\index.php:91 - Attempting to connect to DB: localhost | 3306 | root
+13-04-2018 08:29:22pm C:\Program Files (x86)\Ampps\www\index.php:94 - Connected to DB: localhost
+13-04-2018 08:29:22pm C:\Program Files (x86)\Ampps\www\controller\AbstractBaseController.php:42 - data size: 0
+13-04-2018 08:29:22pm C:\Program Files (x86)\Ampps\www\index.php:52 - No cred file configured. Using default: C:/Program Files (x86)/Ampps/www/config/creds.ini
+13-04-2018 08:29:22pm C:\Program Files (x86)\Ampps\www\index.php:91 - Attempting to connect to DB: localhost | 3306 | root
+13-04-2018 08:29:22pm C:\Program Files (x86)\Ampps\www\index.php:94 - Connected to DB: localhost
+13-04-2018 08:29:22pm C:\Program Files (x86)\Ampps\www\controller\AbstractBaseController.php:42 - data size: 0
+13-04-2018 08:29:27pm C:\Program Files (x86)\Ampps\www\index.php:52 - No cred file configured. Using default: C:/Program Files (x86)/Ampps/www/config/creds.ini
+13-04-2018 08:29:27pm C:\Program Files (x86)\Ampps\www\index.php:91 - Attempting to connect to DB: localhost | 3306 | root
+13-04-2018 08:29:27pm C:\Program Files (x86)\Ampps\www\index.php:94 - Connected to DB: localhost
+13-04-2018 08:29:27pm C:\Program Files (x86)\Ampps\www\controller\AbstractBaseController.php:42 - data size: 0
+13-04-2018 08:29:27pm C:\Program Files (x86)\Ampps\www\index.php:52 - No cred file configured. Using default: C:/Program Files (x86)/Ampps/www/config/creds.ini
+13-04-2018 08:29:27pm C:\Program Files (x86)\Ampps\www\index.php:91 - Attempting to connect to DB: localhost | 3306 | root
+13-04-2018 08:29:27pm C:\Program Files (x86)\Ampps\www\index.php:94 - Connected to DB: localhost
+13-04-2018 08:29:27pm C:\Program Files (x86)\Ampps\www\controller\AbstractBaseController.php:42 - data size: 0
+13-04-2018 08:29:31pm C:\Program Files (x86)\Ampps\www\index.php:52 - No cred file configured. Using default: C:/Program Files (x86)/Ampps/www/config/creds.ini
+13-04-2018 08:29:31pm C:\Program Files (x86)\Ampps\www\index.php:91 - Attempting to connect to DB: localhost | 3306 | root
+13-04-2018 08:29:31pm C:\Program Files (x86)\Ampps\www\index.php:94 - Connected to DB: localhost
+13-04-2018 08:29:43pm C:\Program Files (x86)\Ampps\www\index.php:52 - No cred file configured. Using default: C:/Program Files (x86)/Ampps/www/config/creds.ini
+13-04-2018 08:29:43pm C:\Program Files (x86)\Ampps\www\index.php:91 - Attempting to connect to DB: localhost | 3306 | root
+13-04-2018 08:29:43pm C:\Program Files (x86)\Ampps\www\index.php:94 - Connected to DB: localhost
+13-04-2018 08:29:58pm C:\Program Files (x86)\Ampps\www\index.php:52 - No cred file configured. Using default: C:/Program Files (x86)/Ampps/www/config/creds.ini
+13-04-2018 08:29:58pm C:\Program Files (x86)\Ampps\www\index.php:91 - Attempting to connect to DB: localhost | 3306 | root
+13-04-2018 08:29:58pm C:\Program Files (x86)\Ampps\www\index.php:94 - Connected to DB: localhost

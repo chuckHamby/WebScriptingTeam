@@ -1,20 +1,21 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Chuck Hamby
- * Date: 4/13/2018
- * Time: 7:07 PM
+ * User: Administrator
+ * Date: 4/17/2018
+ * Time: 1:17 PM
  */
 
-class ProductsController extends AbstractBaseController {
+class AdminsController extends AbstractBaseController {
     function process($params){
         $body = file_get_contents("php://input");
         $JSON = json_decode($body, true);
 
-        $adminID = $JSON["adminID"];
+        $username = $JSON["username"];
+        $password = $JSON["password"];
 
-        $DAO = new ProductsDAO();
-        $user = $DAO->get($adminID);
+        $DAO = new AdminsDAO();
+        $user = $DAO->get();
 
         if($user == null){
             $this->data["statusCode"] = 500;
